@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <h1>My Editable Resume</h1>
+    <div class="personal-info">
+      <label for="name">Name: </label>
+      <input type="text" id="name" value="Malaika Rajpoot" placeholder="Enter your name">
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" value="Malaikatoor24@gmail.com" placeholder="Enter your email">
+
+      <label for="phone">Phone: </label>
+      <input type="text" id="phone" value="12345271809" placeholder="Enter your phone number">
+    </div>
+
+    <div class="experience">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <label for="job-title">Job Title: </label>
+        <input type="text" id="job-title" value="Web development" placeholder="Enter job title name">
+        
+        <label for="company-name">Company: </label>
+        <input type="text" id="company-name" value="Remote job" placeholder="Enter company name">
+        
+        <label for="job-description">Description: </label>
+        <textarea id="job-description" placeholder="Describe your job responsibilities">Developed and maintained web applications using React and Node.js.</textarea>
+      </div>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <label for="degree">Degree: </label>
+      <input type="text" id="degree" value="intermediate in commerce" placeholder="Enter your degree">
+
+      <label for="school">School: </label>
+      <input type="text" id="school" value="city school" placeholder="Enter your school">
+    </div>
+
+    <button onclick="saveResume()">Save Resume</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
